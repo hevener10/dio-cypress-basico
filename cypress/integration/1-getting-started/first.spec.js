@@ -1,6 +1,6 @@
 describe('Simple test', () => {
     beforeEach(() => {
-        cy.visit("/");
+        cy.SeedAndVisit();
     });
     it('Focuses the input on load', () => {
         cy.focused().should('have.attr', 'id', 'title');
